@@ -1,5 +1,4 @@
 <template>
-    <div class="headerTutto">
         <div class="header">
                 <div class="dentro-header">
                     <div class="immagine">
@@ -22,7 +21,6 @@
                 </div>
 
            </div>
-    </div>
 </template>
 
 <script>
@@ -46,7 +44,7 @@ export default {
 
 .header{
     width: 100%;
-    height: 18vh;
+    height: 12vh;
     display: flex;
     align-items: center;
 }
@@ -56,6 +54,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 50px;
 }
 .indice  > ul{
     display: flex;

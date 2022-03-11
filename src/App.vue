@@ -2,7 +2,7 @@
   <div id="app">
     <MyHeader />
     <MyMain />
-    <MyMain2 />
+    <MyMainDue />
     <MyFooter />
     
     
@@ -13,16 +13,16 @@
 
 import MyHeader from './components/MyHeader.vue'
 import MyMain from './components/MyMain.vue'
-import MyMain2 from './components/MyMain2.vue'
+import MyMainDue from './components/MyMainDue.vue'
 import MyFooter from './components/MyFooter.vue'
 
 export default {
   name: 'App',
   components: {
     MyFooter,
-    MyMain2,
+    MyMainDue,
     MyMain,
-    MyHeader
+    MyHeader,
   }
 }
 </script>
