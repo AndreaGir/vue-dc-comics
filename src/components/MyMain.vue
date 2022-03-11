@@ -2,12 +2,11 @@
     <div>
         <div class="primomain">
              <div class="dentromain">
-                 <div class="scritta">
-                    
-                 </div>
-                 <div class="container carta-wrapper">
+                 <div class="scritta ">
 
-                    <CartaLista :srcThumb="'https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX'" :titolo="slides[0].series" :prezzo="slides[0].price" />
+                    <CartaLista v-for="(card, index) in slides" :key="index"
+                    :srcThumb="card.thumb" 
+                    :title="card.series" :price="card.price" />
 
                  </div>
                  
@@ -117,19 +116,17 @@ export default {
     background-color: black;
 }
 .dentromain{
-    width: 80%;
+    max-width: 80%;
     height: 100%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
 }
 .scritta{
-    display: flex;
-    align-items: center;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex: wrap;
+  
 }
-.scritta > h1{
-    color: white;
-    font-size: 25px;
-}
+
 
 </style>
