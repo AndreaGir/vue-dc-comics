@@ -47,8 +47,17 @@
          
          <div class="maintre">
              <div class="maintrecentr">
-                 <div>
-                     jfjfjjfj
+                 <div class="liste">
+                     <div>
+                         <h3>DC COMICS</h3>
+                         <h3>SHOP</h3>
+                     </div>
+                     <div>
+                         <h3>DC</h3>
+                     </div>
+                     <div>
+                         <h3>SITES</h3>
+                     </div>
                  </div>
                  <div class="bglogo">
                     <!-- <img src="img/dc-logo-bg.png" alt=""> -->
@@ -137,6 +146,9 @@ export default {
 .bglogo > img{
     padding-bottom: 50px;
 
+}
+.liste{
+    display: flex;
 }
 
 </style>

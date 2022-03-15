@@ -1,6 +1,9 @@
 <template>
     <div class="carta">
-        <img :src="srcThumb" alt="">
+        
+            <img  :src="srcThumb" alt="">
+        
+        
         <h3>{{ title }}</h3>
         
        <span>{{price}}</span>

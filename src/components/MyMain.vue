@@ -112,20 +112,25 @@ export default {
 <style lang="scss" scoped>
 .primomain{
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     background-color: black;
 }
 .dentromain{
-    max-width: 80%;
-    height: 100%;
+    width: 80%;
+    max-height: 100%;
     margin: 0 auto;
 }
 .scritta{
-  max-width: 100%;
+  width: 12%;
   height: 100%;
   display: flex;
-  flex: wrap;
-  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.scritta > div{
+  width: 100%;
+  border: 1px solid blue;
 }
 
 
