@@ -48,15 +48,36 @@
          <div class="maintre">
              <div class="maintrecentr">
                  <div class="liste">
-                     <div>
+                     <div class="par">
                          <h3>DC COMICS</h3>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
                          <h3>SHOP</h3>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
                      </div>
-                     <div>
+                     <div class="par">
                          <h3>DC</h3>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                        
                      </div>
-                     <div>
+                     <div class="par">
                          <h3>SITES</h3>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
+                         <p>lorem</p>
                      </div>
                  </div>
                  <div class="bglogo">
@@ -77,6 +98,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.liste{
+    display: flex;
+    
+}
+.par{
+    color: rgba(255, 255, 255, 0.363);
+    font-size: 14px;
+    padding-right: 30px;
+}
+.par > h3{
+    color: white;
+}
+.par >  p{
+    margin: 0;
+    padding-bottom: 5px;
+}
 .secmain{
     width: 100%;
     height: 20vh;
@@ -93,6 +130,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .carte > div img{
     width: 40px;
@@ -146,9 +184,6 @@ export default {
 .bglogo > img{
     padding-bottom: 50px;
 
-}
-.liste{
-    display: flex;
 }
 
 </style>

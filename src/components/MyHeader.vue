@@ -1,4 +1,5 @@
 <template>
+    <div>
         <div class="header">
                 <div class="dentro-header">
                     <div class="immagine">
@@ -19,8 +20,15 @@
                         </ul>
                     </div>
                 </div>
+           </div>
+           <div class="bg-img">
+               <img src="../assets/jumbotron.jpg" alt="">
+
+               
 
            </div>
+    </div>
+        
 </template>
 
 <script>
@@ -70,6 +78,15 @@ export default {
 }
 .immagine > img{
     width: 100%;
+}
+.bg-img{
+    width: 100%;
+    max-height: 50vh;
+    overflow: hidden;
+}
+.bg-img > img{
+    width: 100%;
+    height: 100%;
 }
 
 

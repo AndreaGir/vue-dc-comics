@@ -1,12 +1,13 @@
 <template>
     <div class="carta">
-        
-            <img  :src="srcThumb" alt="">
-        
+        <div class="tuttaimg">
+            <img class="immagine" :src="srcThumb" alt="">
+        </div>
         
         <h3>{{ title }}</h3>
         
-       <span>{{price}}</span>
+        
+       
     </div>
 </template>
 
@@ -30,5 +31,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.carta{
+    width: 14%;
+    height: max-content;
+}
+.tuttaimg{
+   
+}
 
+.immagine{
+    width: 100%;
+    height: 20%;
+}
+    
 </style>

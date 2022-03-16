@@ -1,16 +1,30 @@
 <template>
     <div>
+      
         <div class="primomain">
+          
              <div class="dentromain">
+               
                  <div class="scritta ">
+                   
 
-                    <CartaLista v-for="(card, index) in slides" :key="index"
+                    <CartaLista class="carta" v-for="(card, index) in slides" :key="index"
                     :srcThumb="card.thumb" 
                     :title="card.series" :price="card.price" />
 
                  </div>
+                 <div class="lead">
+                   <h3>LEAD MORE</h3>
+                 </div>
+
+                 <div class="current">
+                   <h3>CURRENT SERIES</h3>
+                 </div>
+                  
+                  
                  
              </div>
+            
           </div>
 
           
@@ -119,18 +133,40 @@ export default {
     width: 80%;
     max-height: 100%;
     margin: 0 auto;
-}
-.scritta{
-  width: 12%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-}
-.scritta > div{
+    
+.scritta {
+  padding-top: 60px;
+  padding-bottom: 0px;
   width: 100%;
-  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.lead{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.lead > h3{
+  font-size: 13px;
+  padding: 13px 35px 13px 35px;
+  color: white;
+  background-color: rgba(5, 83, 185, 0.918);
+}
+.current{
+  position: relative;
+}
+.current > h3{
+  position: absolute;
+  top: -856px;
+  left: 1px;
+  width: max-content;
+  font-size: 13px;
+  padding: 13px ;
+  color: white;
+  background-color: rgba(5, 83, 185);
+}
 }
 
 
